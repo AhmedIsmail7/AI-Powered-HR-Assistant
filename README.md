@@ -35,3 +35,44 @@ Built with **Streamlit**, **PyTorch**, **Transformers**, and **Groq**.
 ```bash
 git clone [https://github.com/your-username/ai-recruiter.git](https://github.com/your-username/ai-recruiter.git)
 cd ai-recruiter
+
+Here is the formatted Markdown content:
+
+Markdown
+
+### 2. Install System Dependencies (FFmpeg)
+This project requires **FFmpeg** for audio processing (`librosa` and `pypdf` dependency).
+
+* **Ubuntu/Debian:** `sudo apt-get install ffmpeg`
+* **Mac (Homebrew):** `brew install ffmpeg`
+* **Windows:** Download from [ffmpeg.org](https://ffmpeg.org/) and add to your System PATH.
+
+### 3. Install Python Packages
+It is recommended to use a virtual environment.
+
+```bash
+pip install -r requirements.txt
+4. Download Spacy Model
+Required for the text preprocessing logic.
+
+Bash
+
+python -m spacy download en_core_web_sm
+⚙️ Model Configuration
+Confidence Model (.pth)
+The application (utils.py) looks for a specific PyTorch model checkpoint to calculate confidence scores.
+
+If you have trained the model using Confidence_Notebook.ipynb, locate the file named confidence_model.pth.
+
+Place this file in the root directory of the project.
+
+Important: Open utils.py and ensure the load_emotion_model function points to the correct path. If the file is in the root directory, update the path in utils.py to:
+
+Python
+
+# In utils.py
+local_model_path = "confidence_model.pth" 
+🚀 Usage
+Run the Streamlit App:
+
+Bash
