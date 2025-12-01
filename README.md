@@ -31,20 +31,20 @@ Built with **Streamlit**, **PyTorch**, **Transformers**, and **Groq**.
 
 ## 🛠️ Installation
 
-### 2. Install System Dependencies (FFmpeg)
+### 1. Install System Dependencies (FFmpeg)
 This project requires **FFmpeg** for audio processing (`librosa` and `pypdf` dependency).
 
 * **Ubuntu/Debian:** `sudo apt-get install ffmpeg`
 * **Mac (Homebrew):** `brew install ffmpeg`
 * **Windows:** Download from [ffmpeg.org](https://ffmpeg.org/) and add to your System PATH.
 
-### 3. Install Python Packages
+### 2. Install Python Packages
 It is recommended to use a virtual environment.
 
 ```bash
 pip install -r requirements.txt
 ```
-### 4. Download Spacy Model
+### 3. Download Spacy Model
 Required for the text preprocessing logic.
 
 ```bash
