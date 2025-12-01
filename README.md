@@ -43,3 +43,9 @@ It is recommended to use a virtual environment.
 
 ```bash
 pip install -r requirements.txt
+
+### 4. Download Spacy Model
+Required for the text preprocessing logic.
+
+```bash
+python -m spacy download en_core_web_sm
