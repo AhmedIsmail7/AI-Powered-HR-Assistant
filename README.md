@@ -90,7 +90,7 @@ streamlit run finalapp.py
 ## 🧪 Notebooks for Research
 The following files are included for development, training, and testing the core features:
 
-* **`Confidence_Notebook.ipynb`**: Run this in Google Colab or Kaggle to train your own **Audio Confidence Classifier** using the RAVDESS or LibriSpeech datasets.
+* **`Confidence_Notebook.ipynb`**: Run this in Google Colab or Kaggle to train your own **Audio Confidence Classifier**. This notebook processes audio data from the **RAVDESS**, **LibriSpeech**, and **Buckeye Corpus** to ensure the model is trained with samples reflecting both clear speech and hesitation markers.
 * **`Skills matching.py`**: Run this locally to test specific **keyword extraction logic** against resume PDFs.
 
 ## 🛡️ Troubleshooting Guide
