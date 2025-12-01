@@ -35,3 +35,16 @@ Built with **Streamlit**, **PyTorch**, **Transformers**, and **Groq**.
 ```bash
 git clone [https://github.com/your-username/ai-recruiter.git](https://github.com/your-username/ai-recruiter.git)
 cd ai-recruiter
+
+### 2. Install System Dependencies (FFmpeg)
+This project requires **FFmpeg** for audio processing (`librosa` and `pypdf` dependency).
+
+* **Ubuntu/Debian:** `sudo apt-get install ffmpeg`
+* **Mac (Homebrew):** `brew install ffmpeg`
+* **Windows:** Download from [ffmpeg.org](https://ffmpeg.org/) and add to your System PATH.
+
+### 3. Install Python Packages
+It is recommended to use a virtual environment.
+
+```bash
+pip install -r requirements.txt
